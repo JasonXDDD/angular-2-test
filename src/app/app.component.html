@@ -1,3 +1,51 @@
-<h1>
-  {{title}}
-</h1>
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title title-font">XDDD</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation. We hide it in small screens. -->
+            <nav class="mdl-navigation mdl-layout--large-screen-only content-font">
+                <a class="mdl-navigation__link" href="http://163.13.128.195">Server</a>
+                <a class="mdl-navigation__link" href="https://www.facebook.com/hwang.micro?fref=ts">Teacher</a>
+                <a class="mdl-navigation__link" href="https://www.facebook.com/jasonliu1022">Author</a>
+                <a class="mdl-navigation__link" href="https://drive.google.com/file/d/0BzfaradphWG4OTlNWWNZOTZ0czA/view?usp=sharing">Download</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="mdl-layout__content">
+        <div class="page-content">
+            <!-- Your content goes here -->
+
+            <div>
+                <img src="/assets/pic/linux.jpeg" (onclick)="console.log('helloXD')">
+
+                <div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+                <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp XDDtable">
+                    <thead>
+                        <tr class="content-font">
+                            <th class="mdl-data-table__cell--non-numeric">Number</th>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Index</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="content-font" app-name-list [item]="item" *ngFor="let item of data"></tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <footer class="docs-text-styling docs-footer mdl-mini-footer mdl-color--grey-900">
+                <div class="mdl-mini-footer__left-section">
+                    <div class="mdl-logo footer-font">Coding by JasonXDDD in Assembly class~XDDD</div>
+                </div>
+            </footer>
+      </div>
+
+    </main>
+</div>

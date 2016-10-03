@@ -1,0 +1,58 @@
+body {
+    font-family: 'ROBOTO', '微軟正黑體';
+    font-weight: 100;
+    background-color: #f8f8f8;
+}
+
+.XDDcard.mdl-card {
+    width: 1024px;
+    display: block;
+    left: 10%;
+    margin-bottom: 40px
+}
+
+.XDDcard > .mdl-card__title {
+    color: #fff;
+    height: 480px;
+    background: url('../card-bg.jpg') center / cover;
+}
+
+.title-font {
+	font-family: 'ROBOTO', '微軟正黑體';
+    font-size: 60px;
+}
+
+.content-font > p {
+    font-size: 30px;
+}
+
+.content-font > th {
+    font-size: 30px;
+}
+
+.content-font > td {
+    font-size: 30px;
+}
+
+.content-font > a {
+    font-size: 30px;
+}
+
+#p2 {
+    left: 10%;
+    width: 1024px;
+}
+
+.XDDtable {
+    left: 10%;
+    width: 1024px;
+    margin-bottom: 40px;
+}
+
+.footer-font {
+    font-size: 20px;
+}
+
+.mdl-mini-footer {
+    padding: 50px 33% 70px 33%;
+}
